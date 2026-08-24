@@ -51,10 +51,14 @@ body > header {
 }
 
 .navbar .logo {
-  color: var(--xh-ink);
-  font-size: 21px;
-  font-weight: 900;
-  letter-spacing: -.04em;
+  width: 88px;
+  height: 66px;
+  flex: 0 0 88px;
+  display: block;
+  overflow: hidden;
+  color: transparent;
+  background: url("../picter/logo.png") center -23px / 116px 116px no-repeat;
+  font-size: 0;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -1239,7 +1243,11 @@ button:focus-visible {
   }
 
   .navbar .logo {
-    font-size: 18px;
+    width: 75px;
+    height: 56px;
+    flex-basis: 75px;
+    background-position: center -20px;
+    background-size: 99px 99px;
   }
 
   .navbar ul {
