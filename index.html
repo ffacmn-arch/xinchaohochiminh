@@ -33,6 +33,7 @@
   <meta name="twitter:image" content="https://xinchaohochiminh.vercel.app/picter/VILLA/VILLA_YOLO_D/thum.jpg">
 
   <link rel="stylesheet" href="css/home.css">
+  <script src="js/home-slider.js?v=20260824-1" defer></script>
 
   <script type="application/ld+json">
   {
@@ -120,7 +121,8 @@
 
   <main id="main-content">
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-media" src="picter/VILLA/VILLA_YOLO_D/thum.jpg" width="1280" height="1280" alt="정원과 전용 수영장이 있는 호치민 프라이빗 풀빌라" fetchpriority="high">
+      <img class="hero-media is-active" src="picter/VILLA/VILLA_YOLO_D/thum.jpg" width="1280" height="960" alt="정원과 전용 수영장이 있는 호치민 프라이빗 풀빌라" fetchpriority="high" decoding="async">
+      <img class="hero-media" width="1600" height="1067" alt="" aria-hidden="true" decoding="async">
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <p class="eyebrow">호치민 현지 예약</p>
@@ -135,6 +137,12 @@
           <span>✓ 현지 맞춤 일정</span>
           <span>✓ 빠른 예약 안내</span>
         </div>
+      </div>
+      <div class="hero-slider-controls" aria-label="메인 배너 이미지 제어">
+        <span class="hero-slide-status" id="hero-slide-status">빌라 · 1 / 6</span>
+        <button type="button" id="hero-slide-prev" aria-label="이전 이미지">‹</button>
+        <button type="button" class="hero-slider-toggle" id="hero-slide-toggle" aria-label="자동 재생 일시 정지" aria-pressed="false">Ⅱ</button>
+        <button type="button" id="hero-slide-next" aria-label="다음 이미지">›</button>
       </div>
       <a class="scroll-cue" href="#quick-benefits" aria-label="다음 내용 보기">⌄</a>
     </section>
