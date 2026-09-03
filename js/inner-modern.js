@@ -82,3 +82,12 @@
     }
   });
 })();
+
+(() => {
+  if (document.querySelector('script[data-company-site-monitor]')) return;
+  const tracker = document.createElement('script');
+  tracker.src = 'https://company-site-live-monitor.kkacmn.chatgpt.site/tracker.js?site=xinchao-hochiminh';
+  tracker.defer = true;
+  tracker.dataset.companySiteMonitor = 'true';
+  document.head.appendChild(tracker);
+})();
