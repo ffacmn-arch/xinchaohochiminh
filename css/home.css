@@ -148,7 +148,9 @@ a {
 .menu-button {
   display: none;
   margin-left: auto;
-  padding: 8px;
+  width: 44px;
+  min-height: 44px;
+  padding: 8px 10px;
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -298,6 +300,10 @@ a {
   bottom: 30px;
   left: 50%;
   color: #fff;
+  width: 44px;
+  min-height: 44px;
+  display: grid;
+  place-items: center;
   font-size: 28px;
   text-decoration: none;
   transform: translateX(-50%);
@@ -332,8 +338,8 @@ a {
 }
 
 .hero-slider-controls button {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   padding: 0;
   display: grid;
   place-items: center;
@@ -368,6 +374,59 @@ a {
     transform: none;
   }
 }
+
+.answer-first {
+  padding: 76px 20px;
+  background: #ffffff;
+}
+
+.answer-first-inner {
+  width: min(100%, var(--container));
+  margin: 0 auto;
+}
+
+.answer-kicker {
+  margin-bottom: 10px;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.answer-first h2 {
+  max-width: 760px;
+  color: var(--text);
+  font-size: clamp(28px, 4vw, 46px);
+  line-height: 1.28;
+  letter-spacing: -.045em;
+}
+
+.answer-lead {
+  max-width: 820px;
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.answer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.answer-grid article {
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--soft);
+}
+
+.answer-grid strong { color: var(--text); font-size: 19px; }
+.answer-grid p { margin: 11px 0 18px; color: var(--muted); line-height: 1.7; }
+.answer-grid a { display: inline-flex; min-height: 44px; align-items: center; color: var(--primary); font-weight: 800; }
 
 .quick-benefits {
   padding: 38px 20px;
@@ -472,7 +531,10 @@ a {
 
 .text-link {
   flex: 0 0 auto;
+  min-height: 44px;
   padding-bottom: 6px;
+  display: inline-flex;
+  align-items: center;
   color: var(--teal-dark);
   border-bottom: 1px solid currentColor;
   font-size: 14px;
@@ -1081,6 +1143,14 @@ a {
   text-decoration: none;
 }
 
+.footer-links a,
+.footer-bottom a,
+.villa-card-home h3 a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+}
+
 .footer-links a:hover,
 .footer-bottom a:hover {
   color: var(--yellow);
@@ -1296,8 +1366,8 @@ summary:focus-visible {
   }
 
   .hero-slider-controls button {
-    width: 30px;
-    height: 30px;
+    width: 44px;
+    height: 44px;
   }
 
   .hero-proof {
@@ -1307,6 +1377,12 @@ summary:focus-visible {
   .quick-benefits {
     padding: 24px 14px;
   }
+
+  .answer-first { padding: 56px 14px; }
+  .answer-first h2 { font-size: 28px; }
+  .answer-lead { font-size: 16px; }
+  .answer-grid { grid-template-columns: 1fr; gap: 12px; margin-top: 26px; }
+  .answer-grid article { padding: 21px; }
 
   .benefit-list {
     grid-template-columns: 1fr;
