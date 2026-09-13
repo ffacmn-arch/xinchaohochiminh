@@ -1,13 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/home.html",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/home",
-      "destination": "/",
+      "source": "/:path*",
+      "destination": "https://xinchao-hochiminh.vercel.app/:path*",
       "permanent": true
     }
   ],
